@@ -8,8 +8,8 @@ resource "azurerm_app_service_plan" "dev" {
   }
 }
 
-resource "azurerm_app_service" "dev" {
-  name                = "test682434"
+resource "azurerm_app_service" "dev7872" {
+  
   resource_group_name = var.resource_group
   location = var.location
   app_service_plan_id = "${azurerm_app_service_plan.dev.id}"
