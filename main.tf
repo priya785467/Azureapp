@@ -8,12 +8,6 @@ module "resourcegroup" {
   location       = var.location
 }
 
-module "compute" {
-  source         = "./modules/compute"
-  name           = var.name
-  location       = var.location
-}
-
 module "database" {
   source = "./modules/database"
   location = module.resourcegroup.location_id
